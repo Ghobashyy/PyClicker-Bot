@@ -46,10 +46,13 @@ class Cookieclicker():
             print("Cookie img not found")
 
         time.sleep(2)
-        language = pyautogui.locateCenterOnScreen("english.png", confidence=0.9)
-        if language is not None:
-            print("Language image found successfully.")
-            pyautogui.click(language)
+        try:
+            language = pyautogui.locateCenterOnScreen("english.png", confidence=0.9)
+
+            if language is not None:
+                print("Language image found successfully.")
+                pyautogui.click(language)
+        except: pass
 
     def start_game(self):
         time.sleep(2)
