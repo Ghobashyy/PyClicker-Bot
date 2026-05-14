@@ -11,7 +11,7 @@ class Cookieclicker():
                                  (1689, 488, 40, 10)]
         pyautogui.PAUSE = 0.3
 
-    def check_for_buldings(self, region):
+    def check_for_buildings(self, region):
         img = pyautogui.screenshot(region=region)
         width, height = img.size
 
@@ -65,7 +65,7 @@ class Cookieclicker():
                 pyautogui.click(290, 500, clicks=1000, interval=0.02)
 
                 for reg in self.buldings_regions:
-                    position = self.check_for_buldings(reg)
+                    position = self.check_for_buildings(reg)
                     if position:
                         print(f"Upgrade detected, Clicking...")
                         pyautogui.click(position)
