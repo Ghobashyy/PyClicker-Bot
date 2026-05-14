@@ -18,7 +18,7 @@ A robust Python-based automation script that interacts with the "Cookie Clicker"
 ```bash
 ├── main.py            # The core logic and bot class
 ├── browser.png        # Image used to locate the browser icon
-├── webcookie.png      # Image used to accept site cookies
+├── webcookie.png      # Image used to locate web launch icon
 ├── english.png        # Image used for language selection
 └── README.md          # Project documentation
 ```
